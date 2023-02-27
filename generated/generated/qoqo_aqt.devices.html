@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="English" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>qoqo_aqt.devices &mdash; qoqo_aqt 0.0 documentation</title>
@@ -14,12 +14,13 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="qoqo_aqt.devices.SimulatorDevice" href="generated/qoqo_aqt.devices.SimulatorDevice.html" />
     <link rel="prev" title="qoqo_aqt.Backend" href="qoqo_aqt.Backend.html" /> 
 </head>
 
@@ -28,14 +29,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> qoqo_aqt
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            qoqo_aqt
           </a>
               <div class="version">
                 0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -47,10 +52,11 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../qoqo_aqt.html">qoqo_aqt</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="qoqo_aqt.Backend.html">qoqo_aqt.Backend</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">qoqo_aqt.devices</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/qoqo_aqt.devices.SimulatorDevice.html">qoqo_aqt.devices.SimulatorDevice</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/qoqo_aqt.devices.NoisySimulatorDevice.html">qoqo_aqt.devices.NoisySimulatorDevice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qoqo_aqt.devices.NoisySimulatorDevice"><code class="docutils literal notranslate"><span class="pre">NoisySimulatorDevice</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qoqo_aqt.devices.SimulatorDevice"><code class="docutils literal notranslate"><span class="pre">SimulatorDevice</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../qoqo_aqt.html#qoqo_aqt.Backend"><code class="docutils literal notranslate"><span class="pre">Backend</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -70,10 +76,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../modules.html">qoqo_aqt documentation</a> &raquo;</li>
-          <li><a href="../qoqo_aqt.html">qoqo_aqt</a> &raquo;</li>
-      <li>qoqo_aqt.devices</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../modules.html">qoqo_aqt documentation</a></li>
+          <li class="breadcrumb-item"><a href="../qoqo_aqt.html">qoqo_aqt</a></li>
+      <li class="breadcrumb-item active">qoqo_aqt.devices</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/generated/generated/qoqo_aqt.devices.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -108,30 +114,10 @@
 }
 </style>
 <section id="module-qoqo_aqt.devices">
-<span id="qoqo-aqt-devices"></span><h1>qoqo_aqt.devices<a class="headerlink" href="#module-qoqo_aqt.devices" title="Permalink to this headline"></a></h1>
+<span id="qoqo-aqt-devices"></span><h1>qoqo_aqt.devices<a class="headerlink" href="#module-qoqo_aqt.devices" title="Permalink to this heading"></a></h1>
 <p>AQT Devices</p>
-<p>Provides the devices that are used to execute quantum programs with the AQT backend.
-AQT devices can be physical hardware or simulators.</p>
-<table class="longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#qoqo_aqt.devices.SimulatorDevice" title="qoqo_aqt.devices.SimulatorDevice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimulatorDevice</span></code></a></p></td>
-<td><p>AQT quantum simulator device</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#qoqo_aqt.devices.NoisySimulatorDevice" title="qoqo_aqt.devices.NoisySimulatorDevice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NoisySimulatorDevice</span></code></a></p></td>
-<td><p>AQT quantum simulator device with noise model</p></td>
-</tr>
-</tbody>
-</table>
 <p class="rubric">Classes</p>
-<table class="longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
+<table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#qoqo_aqt.devices.NoisySimulatorDevice" title="qoqo_aqt.devices.NoisySimulatorDevice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NoisySimulatorDevice</span></code></a></p></td>
 <td><p>AQT quantum simulator device with noise model</p></td>
@@ -143,24 +129,24 @@ AQT devices can be physical hardware or simulators.</p>
 </table>
 <dl class="py class">
 <dt class="sig sig-object py" id="qoqo_aqt.devices.NoisySimulatorDevice">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">qoqo_aqt.devices.</span></span><span class="sig-name descname"><span class="pre">NoisySimulatorDevice</span></span><a class="headerlink" href="#qoqo_aqt.devices.NoisySimulatorDevice" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">qoqo_aqt.devices.</span></span><span class="sig-name descname"><span class="pre">NoisySimulatorDevice</span></span><a class="headerlink" href="#qoqo_aqt.devices.NoisySimulatorDevice" title="Permalink to this definition"></a></dt>
 <dd><p>AQT quantum simulator device with noise model</p>
 <p>Provides endpoint that receives instructions that are simulated and returns measurement results.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qoqo_aqt.devices.NoisySimulatorDevice.from_bincode">
-<span class="sig-name descname"><span class="pre">from_bincode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.NoisySimulatorDevice.from_bincode" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_bincode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.NoisySimulatorDevice.from_bincode" title="Permalink to this definition"></a></dt>
 <dd><p>Convert the bincode representation of the SimulatorDevice to a SimulatorDevice using the [bincode] crate.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>input</strong> (<em>ByteArray</em>) -- The serialized SimulatorDevice (in [bincode] form).</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The deserialized SimulatorDevice.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#qoqo_aqt.devices.SimulatorDevice" title="qoqo_aqt.devices.SimulatorDevice">SimulatorDevice</a></p>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>TypeError</strong> -- Input cannot be converted to byte array.</p></li>
 <li><p><strong>ValueError</strong> -- Input cannot be deserialized to SimulatorDevice.</p></li>
@@ -171,19 +157,19 @@ AQT devices can be physical hardware or simulators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="qoqo_aqt.devices.NoisySimulatorDevice.from_json">
-<span class="sig-name descname"><span class="pre">from_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.NoisySimulatorDevice.from_json" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.NoisySimulatorDevice.from_json" title="Permalink to this definition"></a></dt>
 <dd><p>Convert the json representation of a NoisySimulatorDevice to a NoisySimulatorDevice.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>input</strong> (<em>str</em>) -- The serialized NoisySimulatorDevice in json form.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The deserialized NoisySimulatorDevice.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#qoqo_aqt.devices.SimulatorDevice" title="qoqo_aqt.devices.SimulatorDevice">SimulatorDevice</a></p>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>ValueError</strong> -- Input cannot be deserialized to SimulatorDevice.</p>
 </dd>
 </dl>
@@ -194,10 +180,10 @@ AQT devices can be physical hardware or simulators.</p>
 <span class="sig-name descname"><span class="pre">number_qubits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.NoisySimulatorDevice.number_qubits" title="Permalink to this definition"></a></dt>
 <dd><p>Return number of qubits simulated by Simulator.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The number of qubits.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>int</p>
 </dd>
 </dl>
@@ -208,10 +194,10 @@ AQT devices can be physical hardware or simulators.</p>
 <span class="sig-name descname"><span class="pre">remote_host</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.NoisySimulatorDevice.remote_host" title="Permalink to this definition"></a></dt>
 <dd><p>Return the URL of the remote host executing Circuits.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The URL of the remote host executing the Circuits.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>str</p>
 </dd>
 </dl>
@@ -222,13 +208,13 @@ AQT devices can be physical hardware or simulators.</p>
 <span class="sig-name descname"><span class="pre">to_bincode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.NoisySimulatorDevice.to_bincode" title="Permalink to this definition"></a></dt>
 <dd><p>Return the bincode representation of the SimulatorDevice using the [bincode] crate.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The serialized SimulatorDevice (in [bincode] form).</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>ByteArray</p>
 </dd>
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>ValueError</strong> -- Cannot serialize SimulatorDevice to bytes.</p>
 </dd>
 </dl>
@@ -239,13 +225,13 @@ AQT devices can be physical hardware or simulators.</p>
 <span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.NoisySimulatorDevice.to_json" title="Permalink to this definition"></a></dt>
 <dd><p>Return the json representation of the NoisySimulatorDevice.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The serialized form of NoisySimulatorDevice.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>str</p>
 </dd>
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>ValueError</strong> -- Cannot serialize NoisySimulatorDevice to json.</p>
 </dd>
 </dl>
@@ -255,24 +241,24 @@ AQT devices can be physical hardware or simulators.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="qoqo_aqt.devices.SimulatorDevice">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">qoqo_aqt.devices.</span></span><span class="sig-name descname"><span class="pre">SimulatorDevice</span></span><a class="headerlink" href="#qoqo_aqt.devices.SimulatorDevice" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">qoqo_aqt.devices.</span></span><span class="sig-name descname"><span class="pre">SimulatorDevice</span></span><a class="headerlink" href="#qoqo_aqt.devices.SimulatorDevice" title="Permalink to this definition"></a></dt>
 <dd><p>AQT quantum simulator device</p>
 <p>Provides endpoint that receives instructions that are simulated and returns measurement results.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="qoqo_aqt.devices.SimulatorDevice.from_bincode">
-<span class="sig-name descname"><span class="pre">from_bincode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.SimulatorDevice.from_bincode" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_bincode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.SimulatorDevice.from_bincode" title="Permalink to this definition"></a></dt>
 <dd><p>Convert the bincode representation of the SimulatorDevice to a SimulatorDevice using the [bincode] crate.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>input</strong> (<em>ByteArray</em>) -- The serialized SimulatorDevice (in [bincode] form).</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The deserialized SimulatorDevice.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#qoqo_aqt.devices.SimulatorDevice" title="qoqo_aqt.devices.SimulatorDevice">SimulatorDevice</a></p>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>TypeError</strong> -- Input cannot be converted to byte array.</p></li>
 <li><p><strong>ValueError</strong> -- Input cannot be deserialized to SimulatorDevice.</p></li>
@@ -283,19 +269,19 @@ AQT devices can be physical hardware or simulators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="qoqo_aqt.devices.SimulatorDevice.from_json">
-<span class="sig-name descname"><span class="pre">from_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.SimulatorDevice.from_json" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.SimulatorDevice.from_json" title="Permalink to this definition"></a></dt>
 <dd><p>Convert the json representation of a SimulatorDevice to a SimulatorDevice.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>input</strong> (<em>str</em>) -- The serialized SimulatorDevice in json form.</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The deserialized SimulatorDevice.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#qoqo_aqt.devices.SimulatorDevice" title="qoqo_aqt.devices.SimulatorDevice">SimulatorDevice</a></p>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>ValueError</strong> -- Input cannot be deserialized to SimulatorDevice.</p>
 </dd>
 </dl>
@@ -306,10 +292,10 @@ AQT devices can be physical hardware or simulators.</p>
 <span class="sig-name descname"><span class="pre">number_qubits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.SimulatorDevice.number_qubits" title="Permalink to this definition"></a></dt>
 <dd><p>Return number of qubits simulated by Simulator.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The number of qubits.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>int</p>
 </dd>
 </dl>
@@ -320,10 +306,10 @@ AQT devices can be physical hardware or simulators.</p>
 <span class="sig-name descname"><span class="pre">remote_host</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.SimulatorDevice.remote_host" title="Permalink to this definition"></a></dt>
 <dd><p>Return the URL of the remote host executing Circuits.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The URL of the remote host executing the Circuits.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>str</p>
 </dd>
 </dl>
@@ -334,13 +320,13 @@ AQT devices can be physical hardware or simulators.</p>
 <span class="sig-name descname"><span class="pre">to_bincode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.SimulatorDevice.to_bincode" title="Permalink to this definition"></a></dt>
 <dd><p>Return the bincode representation of the SimulatorDevice using the [bincode] crate.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The serialized SimulatorDevice (in [bincode] form).</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>ByteArray</p>
 </dd>
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>ValueError</strong> -- Cannot serialize SimulatorDevice to bytes.</p>
 </dd>
 </dl>
@@ -351,13 +337,13 @@ AQT devices can be physical hardware or simulators.</p>
 <span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qoqo_aqt.devices.SimulatorDevice.to_json" title="Permalink to this definition"></a></dt>
 <dd><p>Return the json representation of the SimulatorDevice.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The serialized form of SimulatorDevice.</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>str</p>
 </dd>
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>ValueError</strong> -- Cannot serialize SimulatorDevice to json.</p>
 </dd>
 </dl>
@@ -372,7 +358,6 @@ AQT devices can be physical hardware or simulators.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="qoqo_aqt.Backend.html" class="btn btn-neutral float-left" title="qoqo_aqt.Backend" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="generated/qoqo_aqt.devices.SimulatorDevice.html" class="btn btn-neutral float-right" title="qoqo_aqt.devices.SimulatorDevice" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
